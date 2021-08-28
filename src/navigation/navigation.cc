@@ -123,6 +123,10 @@ void Navigation::Run() {
   // drive_msg_.curvature = ...;
   // drive_msg_.velocity = ...;
 
+  // For the initial test of the system...
+  drive_msg_.curvature = 0;
+  drive_msg_.velocity = 1;
+
   // Add timestamps to all messages.
   local_viz_msg_.header.stamp = ros::Time::now();
   global_viz_msg_.header.stamp = ros::Time::now();
